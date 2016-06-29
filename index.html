@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Horizontal Navigation</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+  </head>
+
+  <body>
+
+    <main class="container">
+
+      <ol id="inner" class="inner">
+
+        <li class="pages home">
+        </li>
+
+        <li class="pages work">
+        </li>
+
+        <li class="pages about">
+        </li>
+
+        <li class="pages contact">
+
+          <form method="get">
+
+          <fieldset>
+            <select name="title">
+              <option value="0">Mr.</option>
+              <option value="1">Mrs.</option>
+              <option value="2">Dr</option>
+              <option value="3">Prof.</option>
+            </select>
+            <label for="firstName"><input type="text" id="firstName" placeholder="First Name"></labe>
+            <label for="lastName"><input type="text" id="lastName" placeholder="Last Name"></labe>
+            <label for="email"><input type="text" id="email" placeholder="Your Email"></label>
+          </fieldset>
+          <fieldset>
+            <label for="address1"><input type="text" id="address1" placeholder="Address Line 1"></label>
+            <label for="address2"><input type="text" id="address2" placeholder="Address Line 2"></label>
+          </fieldset>
+          <fieldset>
+            <label>xs<input type="checkbox" name="Your Size" value="xs" id="xs"></label>
+            <label>xs<input type="checkbox" name="Your Size" value="s" id="s"></label>
+            <label>xs<input type="checkbox" name="Your Size" value="m" id="m"></label>
+            <label>xs<input type="checkbox" name="Your Size" value="L" id="L"></label>
+            <label>xs<input type="checkbox" name="Your Size" value="L" id="XL"></label>
+          </fieldset>
+            <label>Male<input type="radio" name="gender" value="male" id="male"></label>
+            <label>Female<input type="radio" name="gender" value="female" id="female"></label>
+          <fieldset>
+
+          </fieldset>
+
+        </form>
+
+        </li>
+
+      </ol>
+
+      <header class="main-header">
+        <a href="#"><img class="white-logo-header" src="./images/FZ_logo_white.svg"></a>
+      </header>
+
+      <div class="cursors-container">
+        <a id="cursorleft" class="cursors cursor-left" href="#"><img src="./images/cursor-left.svg"></a>
+        <a id="cursorright" class="cursors cursor-right" href="#"><img src="./images/cursor-right.svg"></a>
+      </div>
+
+      <div class="icons-container">
+          <a href="#"><img id="twitter" class="icons" src="./images/social_icons/twitter.svg"></a>
+          <a href="#"><img id="linkedin" class="icons" src="./images/social_icons/linkedin.svg"></a>
+          <a href="#"><img id="instagram" class="icons" src="./images/social_icons/instagram.svg"></a>
+          <a href="#"><img id="behance" class="icons" src="./images/social_icons/behance.svg"></a>
+      </div>
+
+<!--
+      <aside id="sidemenu" class="side-menu">
+
+        <div id="hamburger" class="hamburger">
+          <div class="h-bar bar-1"></div>
+          <div class="h-bar bar-2"></div>
+          <div class="h-bar bar-3"></div>
+          <div class="h-bar bar-4"></div>
+        </div>
+
+        <div id="close-menu" class="close-menu">
+        </div>
+
+        <div class="menu-container">
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+      </aside> -->
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

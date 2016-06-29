@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*GENERALS*/
+
+
+/*MAIN CONTAINER*/
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/*CURSORS*/
+
+.cursors-container {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  margin-top: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.cursors {
+  height: 50px;
+  width: 50px;
+}
+
+.cursor-left {
+  position: absolute;
+  left: 60px;
+}
+
+.cursor-left:hover {
+  left: 55px;
+  transition: .5s;
+}
+
+.cursor-right {
+  position: absolute;
+  right: 60px;
+}
+
+.cursor-right:hover {
+  right: 55px;
+  transition: .5s;
+}
+
+/*MAIN HEADER*/
+
+.main-header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+}
+
+.white-logo-header {
+  height: 40px;
+  width: auto;
+  position: fixed;
+  top: 35px;
+  right: 60px;
+}
+
+
+/*SOCIAL ICONS*/
+
+.icons-container {
+  width: 100vw;
+  height: 50px;
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+}
+
+
+.icons-container a img {
+  height: 35px;
+  width: auto;
+  margin: 0px 10px;
+}
+
+
+
+/*SIDE MENU*/
+/*
+.side-menu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.0);
+  padding: 40px 60px;
+}
+
+@media screen and (max-width: 700px) {
+  .side-menu {
+    width: 100vw;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .side-menu {
+    min-width: 600px;
+  }
+}
+
+
+.hamburger {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 40px;
+  left: 60px;
+}
+
+
+.hamburger .h-bar {
+  background-color: white;
+  width: 30px;
+  height: 1px;
+  border: 1px solid white;
+  border-radius: 2px;
+  margin-top: 0px;
+  margin-bottom: 6px;
+}
+
+.close-menu {
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 40px;
+  right: 60px;
+}
+
+.menu {
+  list-style: none;
+  margin-top: 150px;
+  padding: 0px;
+
+}
+
+.menu li {
+  margin-bottom: 30px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  font-size: 3rem;
+}*/
+
+/*PAGES*/
+
+.inner {
+  height: 100vh;
+  width: 400vw;
+  position: absolute;
+  left: -300vw;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.pages {
+  width: 100vw;
+  height: 100%;
+  float: left;
+}
+
+/*HOME*/
+
+.home {
+  background-color: black;
+}
+
+/*WORK*/
+
+.work {
+  background-color: green;
+}
+
+/*ABOUT*/
+
+.about {
+  background-color: red;
+}
+
+/*CONTACT*/
+
+.contact {
+  background-color: black;
+}
+
+form {
+  margin: 200px auto;
+  width: 600px;
+}
