@@ -3,63 +3,159 @@
   <head>
     <title>Horizontal Navigation</title>
     <link rel="stylesheet" href="./styles/styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Rozha+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700" rel="stylesheet">
+
   </head>
 
   <body>
 
     <main class="container">
 
-      <ol id="inner" class="inner">
+      <ol id="inner" class="inner inner-home">
 
         <li class="pages home">
+          <video autoplay loop id="home-video">
+            <source src="./images/video_home/Master_Video.mp4" type="video/mp4">
+          </video>
         </li>
 
         <li class="pages work">
+
+          <div class="projects-grid-wrap">
+            <div class="project project-1">
+              <div class="project-container">
+                <div class="project-line"></div>
+                  <div class="project-title-wrapper">
+                  <div class="project-text"><h3>US Open of Surfing 2014</h3>
+                  <h4>client: vans</h4></div>
+                  <a href="#"><img src="./images/explore_icon.svg" class="explore-btn"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project project-2">
+              <div class="project-container">
+                <div class="project-line"></div>
+                  <div class="project-title-wrapper">
+                  <div class="project-text"><h3>The New Acura TLX</h3>
+                  <h4>client: Acura - Honda General Motors Inc.</h4></div>
+                  <a href="#"><img src="./images/explore_icon.svg" class="explore-btn"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project project-3">
+              <div class="project-container">
+                <div class="project-line"></div>
+                  <div class="project-title-wrapper">
+                  <div class="project-text"><h3>Citynsider Brading</h3>
+                  <h4>client: Citynsider</h4></div>
+                  <a href="#"><img src="./images/explore_icon.svg" class="explore-btn"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project project-4">
+              <div class="project-container">
+                <div class="project-line"></div>
+                  <div class="project-title-wrapper">
+                  <div class="project-text"><h3>Acura Prism at Sundance</h3>
+                  <h4>client: Acura and Sundance Film Festival</h4></div>
+                  <a href="#"><img src="./images/explore_icon.svg" class="explore-btn"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project project-5">
+              <div class="project-container">
+                <div class="project-line"></div>
+                  <div class="project-title-wrapper">
+                  <div class="project-text"><h3>NikeWomen Styleguide</h3>
+                  <h4>client: Nike</h4></div>
+                  <a href="#"><img src="./images/explore_icon.svg" class="explore-btn"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project project-6">
+              <div class="project-container">
+                <div class="project-line"></div>
+                  <div class="project-title-wrapper">
+                  <div class="project-text"><h3>Hype Type</h3>
+                  <h4>A Custom Typeface</h4></div>
+                  <a href="#"><img src="./images/explore_icon.svg" class="explore-btn"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </li>
 
         <li class="pages about">
+        <div class="about-rows-wrap">
+          <div class="about-row-1">
+              <div class="about-paragraph-left">
+                <h1>How it Started</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              </div>
+              <div class="about-quote-left">
+                <div class="about-quote-line-left"></div>
+                <h6 class="h6-left">"Junior Visual Designer at Mullen Los Angeles"</h6>
+              </div>
+          </div>
+
+          <div class="about-row-2">
+              <div class="about-paragraph-right">
+                <h1>Back to Europe</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              </div>
+              <div class="about-quote-right">
+                <div class="about-quote-line-right"></div>
+                <h6 class="h6-right">"Visual Designer at R/GA London"</h6>
+              </div>
+          </div>
+
+
+
+        </div>
         </li>
 
         <li class="pages contact">
 
+        <div class="form-container">
           <form method="get">
-
           <fieldset>
-            <select name="title">
-              <option value="0">Mr.</option>
-              <option value="1">Mrs.</option>
-              <option value="2">Dr</option>
-              <option value="3">Prof.</option>
-            </select>
-            <label for="firstName"><input type="text" id="firstName" placeholder="First Name"></labe>
-            <label for="lastName"><input type="text" id="lastName" placeholder="Last Name"></labe>
-            <label for="email"><input type="text" id="email" placeholder="Your Email"></label>
+          <label for="name"><input type="text" id="name" placeholder="name"></labe>
+            <label for="email"><input type="text" id="email" placeholder="email"></label>
+            <textarea name="textarea" rows="10" cols="50" placeholder="message..."></textarea>
+            <button class="send-email" type="submit"><img src="./images/send_icon.svg"></button>
           </fieldset>
-          <fieldset>
-            <label for="address1"><input type="text" id="address1" placeholder="Address Line 1"></label>
-            <label for="address2"><input type="text" id="address2" placeholder="Address Line 2"></label>
-          </fieldset>
-          <fieldset>
-            <label>xs<input type="checkbox" name="Your Size" value="xs" id="xs"></label>
-            <label>xs<input type="checkbox" name="Your Size" value="s" id="s"></label>
-            <label>xs<input type="checkbox" name="Your Size" value="m" id="m"></label>
-            <label>xs<input type="checkbox" name="Your Size" value="L" id="L"></label>
-            <label>xs<input type="checkbox" name="Your Size" value="L" id="XL"></label>
-          </fieldset>
-            <label>Male<input type="radio" name="gender" value="male" id="male"></label>
-            <label>Female<input type="radio" name="gender" value="female" id="female"></label>
-          <fieldset>
-
-          </fieldset>
-
         </form>
+      </div>
 
         </li>
 
       </ol>
 
+      <aside id="aside" class="aside-close">
+        <div class="close-button-container"><a href="#" class="close-menu-a"><img id="closemenu" class="close-menu" src="./images/button_close.svg"></a></div>
+
+        <div class="nav-container">
+          <ul>
+            <li class="nav-list-items"><a href="#" class="nav-links nav-work"><div class="line-wrap"><div class="line"></div>work</div></a></li>
+            <li class="nav-list-items"><a href="#" class="nav-links nav-about"><div class="line-wrap"><div class="line"></div>about</div></a></li>
+            <li class="nav-list-items"><a href="#" class="nav-links nav-contact"><div class="line-wrap"><div class="line"></div>contact</div></a></li>
+          </ul>
+        </div>
+
+      </aside>
+
       <header class="main-header">
         <a href="#"><img class="white-logo-header" src="./images/FZ_logo_white.svg"></a>
+        <a href="#"><img id="openmenu" class="open-menu" src="./images/button_open.svg"></a>
       </header>
 
       <div class="cursors-container">
@@ -68,39 +164,15 @@
       </div>
 
       <div class="icons-container">
-          <a href="#"><img id="twitter" class="icons" src="./images/social_icons/twitter.svg"></a>
-          <a href="#"><img id="linkedin" class="icons" src="./images/social_icons/linkedin.svg"></a>
-          <a href="#"><img id="instagram" class="icons" src="./images/social_icons/instagram.svg"></a>
-          <a href="#"><img id="behance" class="icons" src="./images/social_icons/behance.svg"></a>
+          <a href="https://twitter.com/fra_zanuso" target="_blank"><img id="twitter" class="icons" src="./images/social_icons/twitter.svg"></a>
+          <a href="https://www.linkedin.com/in/fzanuso?trk=nav_responsive_tab_profile" target="_blank"><img id="linkedin" class="icons" src="./images/social_icons/linkedin.svg"></a>
+          <a href="https://www.instagram.com/zannihop/" target="_blank"><img id="instagram" class="icons" src="./images/social_icons/instagram.svg"></a>
       </div>
 
-<!--
-      <aside id="sidemenu" class="side-menu">
-
-        <div id="hamburger" class="hamburger">
-          <div class="h-bar bar-1"></div>
-          <div class="h-bar bar-2"></div>
-          <div class="h-bar bar-3"></div>
-          <div class="h-bar bar-4"></div>
-        </div>
-
-        <div id="close-menu" class="close-menu">
-        </div>
-
-        <div class="menu-container">
-          <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-
-      </aside> -->
 
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.js"></script>
-    <script src="./scripts/main.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
